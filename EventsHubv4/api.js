@@ -10,7 +10,7 @@ PASTE_YOUR_APPS_SCRIPT
   }
   function request(action, data = {}) {
     return new Promise((resolve, reject) => {
-      if (!API_URL || API_URL.includes('https://script.google.com/macros/s/AKfycbyFjp87GG-7QRkVsxV4hZZKTI2E9IIQJeQiK7ne9TpQmTWveRlU-v5_oIJOOwTOHsaA5A/exec')) {
+      if (!API_URL || API_URL.includes('PASTE_YOUR_APPS_SCRIPT')) {
         reject(new Error('Configure the Apps Script Web App URL in config.js first.'));
         return;
       }
